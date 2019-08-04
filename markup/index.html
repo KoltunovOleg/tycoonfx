@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materialize</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="bower_components/modernizr/modernizr.js" defer></script>
+	<script src="bower_components/jquery/dist/jquery.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+	<script src="js/jquery.main.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header class="header">
+			<div class="container">
+				<a href="#" class="brand-logo">
+					<img src="images/logo.svg" height="48" width="194" alt="Tycoonfx.">
+				</a>
+				<nav>
+					<div class="nav-wrapper">
+						<div class="user-block">
+							<a href="#" class="btn btn-flat btn-flat waves-effect waves-light">Log in</a>
+							<a href="#" class="btn btn-flat waves-effect waves-light secondary-border">Sign up</a>
+						</div>
+						<ul class="menu">
+							<li><a href="#">About us</a></li>
+							<li class="active"><a href="#">Products</a></li>
+							<li><a href="#">Education</a></li>
+							<li><a href="#">Trading tools</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- <div class="sidenav" id="mobile-demo">
+					<div class="user-block">
+						<a href="#" class="btn btn-small btn-flat waves-effect waves-light">Log in</a>
+						<a href="#" class="btn btn-small waves-effect waves-light">Sign up</a>
+					</div>
+					<ul class="menu">
+						<li><a href="#">About us</a></li>
+						<li class="active"><a href="#">Products</a></li>
+						<li><a href="#">Education</a></li>
+						<li><a href="#">Trading tools</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div> -->
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><span>Menu</span></a>
+			</div>
+		</header>
+		<main class="main">
+			<div class="hero">
+				<div class="bg-img">
+					<picture>
+						<source srcset="images/hero-img-small.jpg" media="(max-width: 768px)">
+							<source srcset="images/hero-img-large.jpg">
+								<img src="images/hero-img-small.jpg" alt="">
+							</picture>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col s12 l6">
+									<h1>24-hour live customer service</h1>
+									<span class="sub">Trade with confidence and benefit</span>
+									<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classica</p>
+									<div class="bnt-area">
+										<a href="#" class="btn waves-effect waves-light">Register now</a>
+										<a href="#" class="btn btn-flat waves-effect waves-light secondary-border">Learn more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="assenble">
+						<div class="bg-img" style="background-image: url(images/waves.svg);">
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col s12 m6">
+									<div class="text-content">
+										<h2 class="center-align deco-top">Assemble and Integrate in Hours, Not Months</h2>
+										<p>ChartIQ is the finance industry’s best solution for assembling absolutely stunning financial workspaces</p>
+										<p>Trusted for our years of experience creating powerful software for capital markets professionals, we provide tools to assemble unique digital workspaces. Our HTML5 driven solutions help you build interactive, visually efficient user experiences quickly and easily. Our products decrease development time from weeks or months to hours or days.</p>
+										<p>We are known for our commitment to our customers and our reputation for making your work life easy instead of hard.</p>
+									</div>
+								</div>
+								<div class="col s12 m6">
+									<img class="assenble-img" src="images/phone.svg" width="512" height="536" alt="image description" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact-us" style="background-image: url(images/contact-bg.png);">
+						<div class="container">
+							<h2 class="center-align deco-top">Contact us</h2>
+							<form action="#">
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="input-field col s12">
+											<input id="first_name" type="text" class="validate">
+											<label for="first_name">First name:</label>
+										</div>
+										<div class="input-field col s12">
+											<input id="last_name" type="text" class="validate">
+											<label for="last_name">Last name:</label>
+										</div>
+										<div class="input-field col s12">
+											<input id="email" type="email" class="validate">
+											<label for="email">E-mail:</label>
+										</div>
+										<div class="input-field col s12">
+											<input id="phone" type="tel" class="validate">
+											<label for="phone">Phone:</label>
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="input-field col s12">
+											<select>
+												<option value="" disabled selected>Department:</option>
+												<option value="1">Option 1</option>
+												<option value="2">Option 2</option>
+												<option value="3">Option 3</option>
+											</select>
+											<label>Materialize Select</label>
+										</div>
+										<div class="input-field col s12">
+											<textarea id="comment" class="materialize-textarea" data-length="200"></textarea>
+											<label for="comment">Comment:</label>
+										</div>
+									</div>
+									<div class="col s12 center-align">
+										<button type="submit" class="btn waves-effect waves-light">Contact us</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</main>
+					<footer class="footer">
+						<div class="container">
+							<div class="footer-nav">
+								<a href="#" class="footer-brand">
+									<img src="images/logo.svg" width="194" height="48" alt="image description" />
+								</a>
+								<ul class="policy-links">
+									<li>
+										<a href="#">Terms and Conditions</a>
+									</li>
+									<li>
+										<a href="#">Risk Disclosure Policy</a>
+									</li>
+									<li>
+										<a href="#">Privacy Policy</a>
+									</li>
+									<li>
+										<a href="#">KYC Policy</a>
+									</li>
+									<li>
+										<a href="#">Deposit and Withdrawal</a>
+									</li>
+									<li>
+										<a href="#">Compliance</a>
+									</li>
+									<li>
+										<a href="#">AML Policy</a>
+									</li>
+								</ul>
+							</div>
+							<ul class="pay-systems">
+								<li>
+									<img src="images/masterard.png" alt="image description" />
+								</li>
+								<li>
+									<img src="images/visa.png" alt="image description" />
+								</li>
+								<li>
+									<img src="images/skrill.png" alt="image description" />
+								</li>
+								<li>
+									<img src="images/wire_transfer.png" alt="image description" />
+								</li>
+								<li>
+									<img src="images/maestro.png" alt="image description" />
+								</li>
+							</ul>
+							<div class="footer-bottom">
+								<span>Copyright &copy; 2018. All Rights Reserved</span>
+								<span>Risk Warning: Trading Contracts For Difference and Foreign Exchange is highly speculative and carries a level of risk that may not be suitable for all investors. You may lose some or all of your invested capital; therefore, you should not speculate with the capital you cannot afford to lose. You should be aware of all ts to cancel all or a single client deal in case of front-running or any other suspicious activity without a preliminary notification. 4xFX is owned and operated by GRF EUROPE OÜ, GRF EUROPE OU license number is FFA000240 and it was issued by Register of Economic Activities, Harju maakond, Tallinn, Kesklinna linnaosa, Roosikrantsi tn 2-K397, 10119, Estonia</span>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</body>
+			</html>

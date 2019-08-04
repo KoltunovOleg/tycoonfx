@@ -1,0 +1,47 @@
+.contact-us {
+	margin: 0 auto 116px;
+	width: 100%;
+	max-width: 400px;
+
+	@media #{$large-and-down} {
+		background-image: none;
+	}
+
+	@media #{$medium-and-up} {
+		max-width: 949px;
+	}
+
+	@media #{$large-and-up} {
+		margin: 0 auto 137px;
+	}
+
+	.container {
+		min-width: auto;
+	}
+
+	[type="submit"] {
+		width: 100%;
+
+		@media #{$medium-and-up} {
+			width: 230px;
+		}
+
+		@media #{$large-and-up} {
+			margin-top: 59px;
+			border-radius: 6px;
+		}
+
+		&:hover {
+			background-color: #245DBA;
+			border-color: #245DBA;
+		}
+	}
+
+	h2 {
+		margin-bottom: 60px;
+
+		@media #{$large-and-up} {
+			margin-bottom: 77px;
+		}
+	}
+}

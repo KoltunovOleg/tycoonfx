@@ -1,0 +1,159 @@
+@import 'materialize';
+
+@import 'base/fonts';
+@import 'base/typography';
+@import 'layout/header';
+
+@import 'modules/buttons';
+@import 'modules/user-block';
+@import 'modules/hero';
+@import 'modules/contact-us';
+@import 'modules/assenble';
+
+@import 'layout/footer';
+
+
+
+body {
+	background-color: #000;
+	@media #{$small-and-down} {
+	}
+}
+
+#wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	width: 89%;
+}
+
+@media #{$medium-and-up} {
+	.container {
+		width: 85%;
+	}
+}
+@media #{$large-and-up} {
+	.container {
+		width: 90%;
+		max-width: 1251px;
+	}
+}
+
+.input-field {
+	margin-top: 0;
+
+	&.col {
+		padding: 0;
+
+		label {
+			left: 18px;
+			width: auto !important;
+		}
+	}
+
+	label {
+		top: auto;
+		bottom: 24px;
+		color: white;
+		font-size: 17px;
+		opacity: 0.77;
+		font-weight: 300;
+	}
+}
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+	padding: 0 16px;
+	border: $input-border;
+	border-radius: 11px;
+	background: rgba(13, 5, 24, 0.6);
+	box-sizing: border-box;
+
+	&.invalid {
+		box-shadow: none;
+		border: 2px solid $input-error-color;
+	}
+}
+
+textarea.materialize-textarea {
+	padding: 20px 16px;
+	height: auto;
+	min-height: 185px;
+
+	& + label {
+		top: 15px;
+		bottom: auto;
+		&.active{
+			transform: translateY(-50%);
+			opacity: 0;
+		}
+	}
+}
+
+.select-wrapper {
+	input {
+		&.select-dropdown {
+			padding: 5px 16px 0;
+			border: $input-border;
+			border-radius: 11px;
+			background: rgba(13, 5, 24, 0.6);
+			font-size: 17px;
+			opacity: 0.77;
+		}
+	}
+
+	.caret {
+		position: absolute;
+		top: 27px;
+		right: 10px;
+		fill: #fff;
+		path {
+			d:path("M0.577721 1.12292C0.892288 0.749392 1.4023 0.749391 1.71687 1.12292L6.34181 6.61475L10.9667 1.12299C11.2813 0.749459 11.7913 0.74946 12.1058 1.12299C12.4204 1.49652 12.4204 2.10212 12.1058 2.47565L6.97969 8.56263C6.80493 8.77016 6.56983 8.86238 6.34145 8.83932C6.11327 8.86214 5.87847 8.76989 5.70387 8.56257L0.577722 2.47558C0.263155 2.10206 0.263155 1.49645 0.577721 1.12292Z");
+		}
+	}
+
+	& + label {
+		display: none;
+	}
+}
+
+.deco-top {
+	position: relative;
+	padding-top: 33px;
+
+	@media #{$large-and-up} {
+		padding-top: 48px;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		height: 4px;
+		width: 155px;
+		background-color: $primary-color;
+		transform: translateX(-50%);
+	}
+}
+
+.bg-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

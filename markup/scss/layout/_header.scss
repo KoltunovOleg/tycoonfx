@@ -1,0 +1,175 @@
+.header {
+	position: relative;
+	padding: 21px 0;
+	z-index: 100;
+
+	.container {
+		// position: relative;
+	}
+	
+	nav {
+		background-color: transparent;
+		box-shadow: none;
+
+		@media #{$large-and-up} {
+			float: right;
+			width: auto;
+		}
+
+		.nav-wrapper {
+			@media #{$large-and-down} {
+				position: fixed;
+				height: 100vh;
+			}
+
+			@media #{$large-and-up} {
+				position: relative;
+				height: auto;
+			}
+		}
+
+		.active {
+			a {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.sidenav-trigger {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 19px;
+	top: 36px;
+	right: 25px;
+	line-height: 1;
+	z-index: 150;
+
+	@media #{$large-and-up} {
+		display: none;
+	}
+
+	.nav-active & {
+		span {
+			opacity: 0;
+			// transition: opacity 0.3s ease-in;
+		}
+		&:before,
+		&:after {
+			top: 8px;
+			bottom: auto;
+			transform: rotate(45deg);
+			// transition: transform 0.3s ease-in, top 0.3s ease-in;
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		// transition: transform 0.3s ease-in, top 0.3s ease-in;
+	}
+
+	&:before,
+	&:after,
+	span {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		border-radius: 5px;
+	}
+
+	span {
+		text-indent: -9999px;
+		top: 8px;		
+		// transition: opacity 0.3s ease-in;
+	}
+
+	&:after {
+		bottom: 0;
+	}
+}
+
+
+.nav-wrapper {
+
+	@media #{$large-and-down} {
+		padding: 80px 20px ;
+		top: 0;
+		right: 0;
+		width: 100%;
+		max-width: 400px;
+		display: flex;
+		flex-direction: column;
+		background-color: #000;
+		z-index: 100;
+		opacity: 0;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+	}
+
+	.nav-active & {
+		transform: translateX(0);
+		opacity: 1;
+		transition: transform 0.3s ease-out;
+	}
+
+	a {
+		@media #{$large-and-down} {
+			font-size: 20px;
+		}
+	}
+}
+
+.menu {
+	@media #{$large-and-down} {
+		display: flex;
+		flex-direction: column;
+		order: -1;
+	}
+	
+	@media #{$large-and-up} {
+		padding-top: 2px;
+		float: right;
+		letter-spacing: .65px;
+	}
+
+	li {
+		@media #{$large-and-down} {
+			margin-bottom: 20px;
+			float: none;
+		}
+	}
+}
+
+nav {
+	.brand-logo {
+		@media #{$medium-and-down} {
+			position: relative;
+			left: auto;
+			transform: none;
+		}
+	}
+
+	ul {
+		a {
+			@media #{$large-and-up} {
+				padding: 0 25px;
+			}
+		}
+	}
+}
+
+
+.nav-active {
+	margin-right: 17px;
+	#wrapper {
+		height: 100vh;
+	}
+}
