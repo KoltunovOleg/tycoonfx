@@ -15,4 +15,4 @@ npm install -g bower
 p2h
 npm install psd2html -g
 
-Для запуска выполнить команду p2h в папке проекта (или grunt в папке markup)
+Для запуска сборщика выполнить команду p2h в консоле в папке проекта (или grunt в папке markup)
