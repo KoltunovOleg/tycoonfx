@@ -2136,39 +2136,9 @@
 
 /*** Colors ***/
 
-/*** Badges ***/
-
-/*** Buttons ***/
-
-/*** Cards ***/
-
-/*** Collapsible ***/
-
-/*** Dropdown ***/
-
-/*** Fonts ***/
-
-/*** Forms ***/
-
 /*** Global ***/
 
 /*** Navbar ***/
-
-/*** SideNav ***/
-
-/*** Photo Slider ***/
-
-/*** Tabs ***/
-
-/*** Tables ***/
-
-/*** Toasts ***/
-
-/*** Typography ***/
-
-/*** Collections ***/
-
-/* Progress Bar */
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
@@ -7563,6 +7533,17 @@ p {
 	transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 }
 
+.menu a {
+	-webkit-transition: color .3s ease-out;
+	transition: color .3s ease-out;
+}
+
+.menu a:hover {
+	color: #468af9;
+	-webkit-transition: color .3s ease-out;
+	transition: color .3s ease-out;
+}
+
 .nav-active {
 	margin-right: 17px;
 }
@@ -7722,6 +7703,10 @@ p {
 	line-height: 18px;
 	font-weight: 500;
 	color: #fff;
+}
+
+.policy-links a:hover {
+	text-decoration: underline;
 }
 
 .footer-bottom {
@@ -8273,6 +8258,11 @@ textarea.materialize-textarea + label.active {
 		padding-bottom: 50px;
 	}
 
+	.hero .btn,
+	.hero .btn-large {
+		margin: 0 12px;
+	}
+
 	.hero .bg-img img {
 		top: 0;
 		width: 100%;
@@ -8699,7 +8689,7 @@ textarea.materialize-textarea + label.active {
 	.hero .btn,
 	.hero .btn-large {
 		min-width: 230px;
-		margin-right: 12px;
+		margin-left: 0;
 	}
 
 	.hero .bg-img img {
@@ -8811,7 +8801,7 @@ textarea.materialize-textarea + label.active {
 		content: "";
 		display: block;
 		position: absolute;
-		right: -15px;
+		right: -6%;
 		top: 50%;
 		height: 16px;
 		width: 1px;

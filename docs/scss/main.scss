@@ -16,8 +16,6 @@
 
 body {
 	background-color: #000;
-	@media #{$small-and-down} {
-	}
 }
 
 #wrapper {
@@ -63,6 +61,8 @@ body {
 		font-weight: 300;
 	}
 }
+
+
 input:not([type]),
 input[type=text],
 input[type=password],

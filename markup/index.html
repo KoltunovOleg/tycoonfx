@@ -7,7 +7,6 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/materialize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="bower_components/modernizr/modernizr.js" defer></script>
 	<script src="bower_components/jquery/dist/jquery.min.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
 	<script src="js/jquery.main.js" defer></script>
@@ -34,19 +33,6 @@
 						</ul>
 					</div>
 				</nav>
-				<!-- <div class="sidenav" id="mobile-demo">
-					<div class="user-block">
-						<a href="#" class="btn btn-small btn-flat waves-effect waves-light">Log in</a>
-						<a href="#" class="btn btn-small waves-effect waves-light">Sign up</a>
-					</div>
-					<ul class="menu">
-						<li><a href="#">About us</a></li>
-						<li class="active"><a href="#">Products</a></li>
-						<li><a href="#">Education</a></li>
-						<li><a href="#">Trading tools</a></li>
-						<li><a href="#">Contact us</a></li>
-					</ul>
-				</div> -->
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><span>Menu</span></a>
 			</div>
 		</header>
@@ -95,29 +81,29 @@
 					<div class="contact-us" style="background-image: url(images/contact-bg.png);">
 						<div class="container">
 							<h2 class="center-align deco-top">Contact us</h2>
-							<form action="#">
+							<form action="#" #="contact-form">
 								<div class="row">
 									<div class="col s12 m6">
 										<div class="input-field col s12">
-											<input id="first_name" type="text" class="validate">
+											<input id="first_name" type="text" name="first_name" class="validate">
 											<label for="first_name">First name:</label>
 										</div>
 										<div class="input-field col s12">
-											<input id="last_name" type="text" class="validate">
+											<input id="last_name" type="text" name="last_name">
 											<label for="last_name">Last name:</label>
 										</div>
 										<div class="input-field col s12">
-											<input id="email" type="email" class="validate">
+											<input id="email" type="email" name="email">
 											<label for="email">E-mail:</label>
 										</div>
 										<div class="input-field col s12">
-											<input id="phone" type="tel" class="validate">
+											<input id="phone" type="tel" name="phone">
 											<label for="phone">Phone:</label>
 										</div>
 									</div>
 									<div class="col s12 m6">
 										<div class="input-field col s12">
-											<select>
+											<select name="department">
 												<option value="" disabled selected>Department:</option>
 												<option value="1">Option 1</option>
 												<option value="2">Option 2</option>
@@ -126,12 +112,12 @@
 											<label>Materialize Select</label>
 										</div>
 										<div class="input-field col s12">
-											<textarea id="comment" class="materialize-textarea" data-length="200"></textarea>
+											<textarea id="comment" class="materialize-textarea" name="comment"></textarea>
 											<label for="comment">Comment:</label>
 										</div>
 									</div>
 									<div class="col s12 center-align">
-										<button type="submit" class="btn waves-effect waves-light">Contact us</a>
+										<button type="submit" class="btn waves-effect waves-light">Contact us</button>
 										</div>
 									</div>
 								</form>
