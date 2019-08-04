@@ -1,0 +1,21 @@
+.btn {
+	border: $button-border solid $primary-color;
+	text-transform: none;
+	font-size: $button-font-size;
+}
+
+
+
+.btn-flat {
+	&:hover {
+		background-color: $primary-color;
+	}
+
+	&.secondary-border {
+		border-color: $secondary-color;
+
+		&:hover {
+			background-color: $secondary-color;
+		}
+	}
+}

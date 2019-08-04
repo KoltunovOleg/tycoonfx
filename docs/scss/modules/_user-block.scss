@@ -1,0 +1,22 @@
+.user-block {
+	
+	@media #{$large-and-up} {
+		margin-left: 14px;
+		float: right;
+	}
+
+	.btn {
+		text-transform: none;
+		font-size: 16px;
+		line-height: 33px;
+		height: 36px;
+
+		@media #{$large-and-up} {
+			margin-left: 13px;
+			height: 40px;
+			width: 136px;
+			border-radius: 3px;
+			line-height: 38px;
+		}
+	}
+}
